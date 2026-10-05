@@ -1,0 +1,24 @@
+x = int(input("Angka 1: "))
+y = int(input("Angka 2: "))
+
+def menu_1(x, y):
+    return x + y
+
+hasil_1 = menu_1(x, y)
+
+def menu_2(hasil_1):
+    return hasil_1 * 3
+
+hasil_2 = menu_2(hasil_1)
+
+def menu_3(hasil_2):
+    if hasil_2 >= 100:
+        return "Status: LULUS"
+    return "Status: TIDAK LULUS"
+
+hasil_3 = menu_3(hasil_2)
+
+print("")
+print(str("hasil pejumlahan: "), hasil_1)
+print(str("hasil setelah dikali 3: "), hasil_2)
+print(hasil_3)
